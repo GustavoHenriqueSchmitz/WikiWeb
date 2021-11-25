@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background: url("../../img/Plano\ de\ fundo\ WikiWeb.jpeg");
+}
+
+header#cabecalhofiltros {
+    position: absolute;
+    top: -53px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.2);
+    width: 208px;
+    padding-bottom: 200px;
+    padding-right: 912px;
+}
+
+div#filtros {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(234,0,21,0.8);
+    padding-bottom: 150px;
+    paddign-right: 200px;
+}
