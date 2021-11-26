@@ -1,8 +1,10 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: 'fonte titulo';
   src: url(../../_fonts/bubblegum-sans-regular.otf);
 }
+
 @font-face {
   font-family: 'fonte texto';
   src: url(../../_fonts/HinaMincho-Regular.ttf);
@@ -11,15 +13,15 @@
 /*corpo do site*/
 /*Preparando o corpo do site*/
 body {
-  background-image: url("../../img/fundo inicio wikiweb.webp");
+  background-image: url("img/bg-home.webp");
 }
 
 html {
-  border-top: 10px solid rgba(15,15,15,0.9);
-  border-left: 80px solid rgba(15,15,15,0.9);
-  border-bottom: 60px solid rgba(15,15,15,0.9);
-  border-right: 80px solid rgba(15,15,15,0.9);
-  height: 568px;
+  border-top: 10px solid rgba(15, 15, 15, 0.9);
+  border-left: 80px solid rgba(15, 15, 15, 0.9);
+  border-bottom: 60px solid rgba(15, 15, 15, 0.9);
+  border-right: 80px solid rgba(15, 15, 15, 0.9);
+  /* height: 568px; */
 }
 
 /*Planejando preparando os containers*/

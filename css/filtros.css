@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 body {
-  background-image: url("../../img/Plano de fundo WikiWeb.jpeg");
+  background-image: url("../img/bg.jpeg");
 }
 
 body header {
   position: absolute;
   width: 420px;
   height: 584px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   left: 0px;
   top: -20px;
 }
@@ -47,7 +47,7 @@ body header ul#opcoes li {
 }
 
 body header ul#opcoes li:hover {
-  border: 3px solid #888888 ;
+  border: 3px solid #888888;
   background: black;
 }
 
@@ -62,7 +62,7 @@ section#linkssites {
   width: 410px;
   right: 145px;
   top: 32px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 15px 15px 15px 15px;
 }
 
@@ -88,13 +88,13 @@ table td {
 }
 
 table td.le {
-  background-color: rgba(60,60,60,0.9);
+  background-color: rgba(60, 60, 60, 0.9);
   color: white;
   font-size: 10pt;
 }
 
 table td.ld {
-  background-color: rgba(130,130,130,0.9);
+  background-color: rgba(130, 130, 130, 0.9);
   color: black;
   font-size: 10pt;
 }
@@ -102,4 +102,3 @@ table td.ld {
 table td.ld a {
   color: black;
 }
-

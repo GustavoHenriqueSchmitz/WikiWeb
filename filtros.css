@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background: url("../../img/Plano\ de\ fundo\ WikiWeb.jpeg");
+    background: url("img/bg.jpeg");
 }
 
 header#cabecalhofiltros {
