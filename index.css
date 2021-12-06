@@ -1,102 +1,91 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: 'fonte titulo';
-  src: url(../../_fonts/bubblegum-sans-regular.otf);
+/*configuração da base (todas as divisões e semanticas)*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
-  font-family: 'fonte texto';
-  src: url(../../_fonts/HinaMincho-Regular.ttf);
-}
-
-/*corpo do site*/
-/*Preparando o corpo do site*/
 body {
-  background-image: url("img/bg-home.webp");
+  background-image: url("img/bg.jpg");
 }
 
-html {
-  border-top: 10px solid rgba(15, 15, 15, 0.9);
-  border-left: 80px solid rgba(15, 15, 15, 0.9);
-  border-bottom: 60px solid rgba(15, 15, 15, 0.9);
-  border-right: 80px solid rgba(15, 15, 15, 0.9);
-  /* height: 568px; */
+header {
+  position: absolute;
+  margin: 2.5% 0 0 25%;
+  background-color: rgba(0,0,0,0.8);
+  width: 45%;
+  height: 9%;
 }
 
-/*Planejando preparando os containers*/
-div#divprincipal {
+#maispopular {
+  position: absolute;
+  margin: 10% 0 0 2%;
+  background-color: rgba(0,0,0,0.8);
+  width: 37%;
+  height: 79%;
+}
+
+#iniciar {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  margin: 10% 0 0 41%;
+  width: 57%;
+  height: 79%;
+}
+
+/*titulos*/
+header h1 {
   position: relative;
-  background-color: rgba(35, 35, 35, 0.7);
-  width: 950px;
-  height: 410px;
-  left: -10px;
-  padding: 4px;
-  top: -9px;
+  color: white;
+  text-align: center;
+  top: 20%;
+  font-size: 3rem;
+  opacity: 0;
 }
 
-div#divprincipal div#div2 {
+#maispopular h1 {
   position: relative;
-  background: white;
-  height: 68%;
-  width: 44%;
-  left: 55px;
-  top: 35px;
-  border: 4px solid #888888;
+  top: 1.5%;
+  color: white;
+  text-align: center;
+  opacity: 0;
 }
 
-/*Trabalhando internamente nos containers*/
-div#divprincipal h1 {
-  font-family: 'fonte titulo', 'sans-serif';
+#iniciar h1 {
   position: relative;
+  top: 3%;
+  color: white;
+  text-align: center;
+  opacity: 0;
+}
+
+#iniciar h2 {
+  position: relative;
+  top: 6%;
   text-align: center;
   color: white;
+  opacity: 0;
 }
 
-div#divprincipal h3#topicos {
-  color: white;
+/*iframe*/
+#maispopular iframe {
   position: relative;
-  float: left;
-  left: 50px;
-  top: -10px;
-  font-family: "fonte titulo", serif;
-  font-size: 20pt;
+  left: 2%;
+  top: 3%;
+  width: 95%;
+  height: 89%;
 }
-
-div#divprincipal h3#comecar {
-  color: white;
+/*flecha*/
+#flechadireita {
   position: relative;
-  float: right;
-  right: 210px;
-  top: -10px;
-  font-family: "fonte titulo", serif;
-  font-size: 20pt;
+  margin: 17% 0 0 8%;
+  width: 65%;
+  height: 45%;
 }
 
-/*Imagems*/
-div#divprincipal img#Flecha {
-  position: relative;
-  left: 540px;
-  top: -180px;
-  height: 180px;
-  width: 330px;
-  transition: 1s;
-  clear: both;
-}
-
-div#divprincipal img#Flecha:hover {
-  left: 525px;
-}
-
-div#div2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/*Iframe*/
-div#divprincipal div#div2 iframe {
-  position: relative;
-  height: 100%;
-  width: 100%;
+#flechadireita:hover {
+  left: 15%;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.05s;
 }
