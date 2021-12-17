@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/*configuração da base (todas as divisões e semanticas)*/
 * {
   margin: 0;
   padding: 0;
@@ -11,81 +10,34 @@ body {
 }
 
 header {
-  position: absolute;
-  margin: 2.5% 0 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  height: 23vh;
+}
+
+header h1 {
+  padding: 1.4% 6% 1.4% 6%;
   background-color: rgba(0,0,0,0.8);
-  width: 45%;
-  height: 9%;
+  color: white;
+}
+
+#divprincipal {
+  padding: 0 3vw;
+  display: grid;
+  gap: 3vw;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 #maispopular {
-  position: absolute;
-  margin: 10% 0 0 2%;
   background-color: rgba(0,0,0,0.8);
-  width: 37%;
-  height: 79%;
+  align-self: center;
+  height: 72vh;
 }
 
 #iniciar {
-  position: absolute;
   background-color: rgba(0,0,0,0.8);
-  margin: 10% 0 0 41%;
-  width: 57%;
-  height: 79%;
-}
-
-/*titulos*/
-header h1 {
-  position: relative;
-  color: white;
-  text-align: center;
-  top: 20%;
-  font-size: 3rem;
-  opacity: 0;
-}
-
-#maispopular h1 {
-  position: relative;
-  top: 1.5%;
-  color: white;
-  text-align: center;
-  opacity: 0;
-}
-
-#iniciar h1 {
-  position: relative;
-  top: 3%;
-  color: white;
-  text-align: center;
-  opacity: 0;
-}
-
-#iniciar h2 {
-  position: relative;
-  top: 6%;
-  text-align: center;
-  color: white;
-  opacity: 0;
-}
-
-/*iframe*/
-#maispopular iframe {
-  position: relative;
-  left: 2%;
-  top: 3%;
-  width: 95%;
-  height: 89%;
-}
-/*flecha*/
-#flechadireita {
-  position: relative;
-  margin: 17% 0 0 8%;
-  width: 65%;
-  height: 45%;
-}
-
-#flechadireita:hover {
-  left: 15%;
-  transition: all 0.5s ease-in;
-  transition-delay: 0.05s;
+  height: 72vh;
+  align-self: center;
 }
