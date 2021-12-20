@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*base do site*/
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,10 @@
 
 body {
   background-image: url("img/bg.jpg");
+  min-height: 100vh;
 }
 
+/*Cabeçalho com o título*/
 header {
   display: flex;
   justify-content: center;
@@ -20,24 +22,78 @@ header {
 header h1 {
   padding: 1.4% 6% 1.4% 6%;
   background-color: rgba(0,0,0,0.8);
+  font-size: 4vh;
   color: white;
 }
 
+/*divisão com as divs com conteúdo*/
 #divprincipal {
-  padding: 0 3vw;
+  padding: 2vh 3vw;
   display: grid;
   gap: 3vw;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/*div conteúdo -> Mais Popular*/
 #maispopular {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 12% 85%;
   background-color: rgba(0,0,0,0.8);
   align-self: center;
   height: 72vh;
 }
 
+#maispopular h1 {
+  color: white;
+  font-size: 3vh;
+}
+
+#maispopular iframe {
+  min-height: 100%;
+  min-width: 96%;
+}
+
+/*Div com conteúdo Iniciar*/
 #iniciar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 10% 78%;
   background-color: rgba(0,0,0,0.8);
   height: 72vh;
   align-self: center;
+}
+
+#iniciar h1 {
+  font-size: 4vh;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+
+#iniciar h2 {
+  font-size: 3vh;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+
+#flechadireita {
+  align-self: center;
+  justify-self: left;
+  min-height: 10vh;
+  max-height: 65vh;
+  min-width: 10vw;
+  max-width: 60vw;
+  padding-left: 10%;
+}
+
+a {
+  display: flex;
+  justify-self: left;
+  align-self: center;
+  min-height: 100%;
+  min-width: 100%;
 }

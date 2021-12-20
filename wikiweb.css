@@ -14,7 +14,7 @@ body {
     display: block;
     background-color: rgba(0,0,0,0.8);
     color: white;
-    height: 25vh;
+    min-height: 25vh;
     text-align: center;
 }
 /*Trabalhando nos filtros dentro do cabeçalho*/
@@ -60,7 +60,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 3vw;
-    padding: 0 3vh;
+    padding: 5vh 3vh;
     border: 5px solid yellow;
 }
 
