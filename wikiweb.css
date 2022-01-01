@@ -4,68 +4,101 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-image: url("img/bg.jpg");
 }
+
 /*Cabeçalho do site*/
-#titulo {
-    display: block;
+header {
+    display: grid;
+    padding-top: 1%;
     background-color: rgba(0,0,0,0.8);
     color: white;
-    min-height: 25vh;
-    text-align: center;
+    place-items: center;
 }
-/*Trabalhando nos filtros dentro do cabeçalho*/
-#filtros {
-    margin-top: 3vh;
+
+header ul {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-content: space-between;
     list-style: none;
-}
-
-#filtros li {
-    display: inline-block;
-    background-color: #888888;
     text-transform: uppercase;
-    border: 0.5vh solid black;
-    padding: 0.7vh;
-    margin: 0.7vh;
+}
+
+header li {
+    padding: 0.4%;
+    margin: 0.7%;
+    border: 3px solid black;
+    background-color: #888888;
     transition: 1s;
 }
 
-#filtros li a {
-    text-decoration: none;
-    color: black;
-    padding: 0.7vh;
-    transition: 1s;
-}
-
-#titulo h1,
+header h1,
 h2,
 h3 {
-    margin-bottom: 1.2vh;
+    margin-bottom: 1%;
 }
 
-#filtros li:hover {
-    background-color: black;
-    border: 0.5vh solid #888888;
+header h3 {
+    background-color:#888888;
+    text-transform: uppercase;
+    border: 5px solid black;
+    padding: 0.8% 3%;
+    color: black;
+    transition: 1s;
 }
 
-#filtros li:hover a {
+header h3  a {
+    color: black;
+    transition: 1s;
+}
+
+header h3:hover a {
     color: white;
 }
 
-/*Corpo do site, contendo as bases para as tabelas, com os links*/
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 3vw;
-    padding: 5vh 3vh;
-    border: 5px solid yellow;
+header h3:hover {
+    color: white;
+    border: 5px solid #888888;
+    background-color: black;
 }
 
-.catalogos {
-    border: 1vh solid red;
-    background-color: rgba(0,0,0,0.8);
-    height: 75vh;
+header li a {
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+header li:hover {
+    background-color: black;
+    border: 3px solid #888888;
+}
+
+header li:hover a {
+    color: white;
+}
+/*Um media query para em caso de dispositivos móveis ou tela na vertical*/
+@media(max-width: 750px) {
+    
+    header {
+        padding-top: 3%;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header h1,
+    h2,
+    h3 {
+        color: black;
+        margin-bottom: 4%;
+    }
+
 }
